@@ -1,7 +1,4 @@
 #this script modified from "working with acs.R" by ezra haber glenn
-
-#begin script
-
 install.packages("acs")
 library(acs)
 api.key.install(key=YOURKEY)

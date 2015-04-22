@@ -1,13 +1,23 @@
 #this script modified from "working with acs.R" by ezra haber glenn
+
 install.packages("acs")
+
 library(acs)
-api.key.install(key=YOURKEY)
+
 #download census key from http://www.census.gov/developers/tos/key_request.html
+api.key.install(key=YOURKEY)
+
 #create geography
 dsni=geo.make(state=25,county=25,tract=c(080100,080300,080401,081800,082000,090200,090300,090400,090600,090700,091300,091400))
+
 #fetch data
 data=acs.fetch(geography=dsni, table.number="B01003", endyear=2012)
+
+#plot data
 plot(data)
+
+#save as csv
+write.csv(estimate(data), file="C:/data_estimate.csv")
 
 
 

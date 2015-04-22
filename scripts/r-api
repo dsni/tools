@@ -3,8 +3,12 @@ install.packages("acs")
 library(acs)
 api.key.install(key=YOURKEY)
 #download census key from http://www.census.gov/developers/tos/key_request.html
-data=acs.fetch(geo=geo.make(state=25, county=(25), tract=(LIST TRACTS), table.number="LIST TABLE)
-data
+#create geography
+dsni=geo.make(state=25,county=25,tract=c(080100,080300,080401,081800,082000,090200,090300,090400,090600,090700,091300,091400))
+#fetch data
+data=acs.fetch(geography=dsni, table.number="B01003", endyear=2012)
+
+
 
 
 

@@ -7,6 +7,7 @@ api.key.install(key=YOURKEY)
 dsni=geo.make(state=25,county=25,tract=c(080100,080300,080401,081800,082000,090200,090300,090400,090600,090700,091300,091400))
 #fetch data
 data=acs.fetch(geography=dsni, table.number="B01003", endyear=2012)
+plot(data)
 
 
 

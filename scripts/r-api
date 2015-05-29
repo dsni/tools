@@ -13,9 +13,6 @@ dsni=geo.make(state=25,county=25,tract=c(080100,080300,080401,081800,082000,0902
 #fetch data -- table codes available here: https://github.com/dsni/data/blob/master/census/meta
 data=acs.fetch(geography=dsni, table.number="B01003", endyear=2012)
 
-#plot data
-plot(data)
-
 #save as csv
 write.csv(estimate(data), file="C:/data_estimate.csv")
 

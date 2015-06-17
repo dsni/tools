@@ -5,7 +5,7 @@ install.packages("acs")
 library(acs)
 
 #download census key from http://www.census.gov/developers/tos/key_request.html
-api.key.install(key=YOURKEY)
+api.key.install(key="YOURKEY")
 
 #create geography -- customize tract codes based on your area of interest
 dsni=geo.make(state=25,county=25,tract=c(080100,080300,080401,081800,082000,090200,090300,090400,090600,090700,091300,091400))

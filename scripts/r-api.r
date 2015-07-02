@@ -14,7 +14,7 @@ dsni=geo.make(state=25,county=25,tract=c(080100,080300,080401,081800,082000,0902
 data=acs.fetch(geography=dsni, table.number="B01003", endyear=2012)
 
 #save as csv
-write.csv(estimate(data), file="C:/data_estimate.csv")
+write.csv(estimate(data),file="C:/data_estimate.csv")
 
 
 

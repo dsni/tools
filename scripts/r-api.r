@@ -4,7 +4,7 @@ install.packages("acs")
 
 library(acs)
 
-#download census key from http://www.census.gov/developers/tos/key_request.html
+#download census key from http://api.census.gov/data/key_signup.html
 api.key.install(key="YOURKEY")
 
 #create geography -- customize tract codes based on your area of interest
